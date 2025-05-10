@@ -1,0 +1,72 @@
+---
+import MotherPhoto from "../components/MotherPhoto.astro";
+import mothersData from "../data/mothers.json";
+
+const title = "Feliz Día Mamá";
+
+// Use the imported data
+const mothers = mothersData;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<h1>{title}</h1>
+
+		<div class="photo-gallery">
+			{
+				mothers.map((mother) => (
+					<MotherPhoto
+						name={mother.name}
+						image={mother.image}
+						messages={mother.messages}
+					/>
+				))
+			}
+		</div>
+
+		<footer>
+			<p>¡Feliz Día de las Madres!</p>
+			<p>Creado por Alejandro Urrea</p>
+			<p>Inspirado por el amor de todas las madres.</p>
+		</footer>
+	</body>
+</html>
+
+<style>
+	body {
+		background-color: #761da5; /* Light purple background color */
+		color: #e9e1e1;
+		font-family: Arial, sans-serif;
+		text-align: center;
+		padding: 50px;
+	}
+	h1 {
+		color: #ff69b4;
+		 font-family: 'Brush Script MT', cursive;
+		font-size: 3em;
+		text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+	}
+	.photo-gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+		margin-top: 40px;
+	}
+
+	footer {
+		margin-top: 50px;
+		font-size: 0.9em;
+		color: #e9e1e1;
+	}
+	footer p {
+		margin: 5px 0;
+	}	
+</style>

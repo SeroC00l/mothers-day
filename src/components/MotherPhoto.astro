@@ -1,0 +1,206 @@
+---
+interface Props {
+  name: string;
+  image: string;
+  messages: {
+    text: string;
+    author: string;
+  }[];
+}
+
+const { name, image, messages } = Astro.props;
+---
+
+<div class="mother-item">
+  <div class="photo-container">
+    <div class="mother-photo">
+      <img src={image} alt={name} class="photo" />
+      <h3 class="mother-name">{name}</h3>
+    </div>
+  </div>
+  <div class="message-card">
+    <div class="leaf top-left"></div>
+    <div class="leaf top-right"></div>
+    <div class="message-content">
+      {messages.map((message) => (
+        <div class="message-item">
+          <p class="message-text">{message.text}</p>
+          <p class="message-author">- {message.author}</p>
+        </div>
+      ))}
+    </div>
+    <div class="leaf bottom-left"></div>
+    <div class="leaf bottom-right"></div>
+  </div>
+</div>
+
+<style>
+  .mother-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 280px;
+  }
+
+  .photo-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .mother-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    background-color: white;
+    border: 8px solid #fff;
+    position: relative;
+  }
+  
+  .mother-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .mother-name {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+    text-shadow: 
+      -2px -2px 0 #333,
+      2px -2px 0 #333,
+      -2px 2px 0 #333,
+      2px 2px 0 #333;
+    margin: 0;
+    transform: rotate(-5deg);
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 3;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .message-card {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 12px;
+    width: 100%;
+    opacity: 0;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+    position: relative;
+    padding: 10px;
+  }
+
+  .message-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .leaf {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2327ae60"><path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  .top-left {
+    top: -15px;
+    left: -15px;
+    transform: rotate(135deg); /* Rotated 180 degrees from original -45deg */
+  }
+
+  .top-right {
+    top: -15px;
+    right: -15px;
+    transform: rotate(225deg); /* Rotated 180 degrees from original 45deg */
+  }
+
+  .bottom-left {
+    bottom: -15px;
+    left: -15px;
+    transform: rotate(45deg); /* Rotated 180 degrees from original -135deg */
+  }
+
+  .bottom-right {
+    bottom: -15px;
+    right: -15px;
+    transform: rotate(315deg); /* Rotated 180 degrees from original 135deg */
+  }
+  
+  .message-text {
+    margin: 15px 20px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .message-author {
+    margin: 10px 20px 15px;
+    font-style: italic;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .mother-item.expanded .message-card {
+    height: auto;
+    padding: 10px 0;
+    margin-top: 15px;
+    opacity: 1;
+  }
+
+  .mother-item.expanded .leaf {
+    opacity: 1;
+  }
+
+  .message-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .message-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+</style>
+
+<script>
+  // Add client-side interactivity to expand messages on click
+  document.addEventListener('DOMContentLoaded', () => {
+    const photoElements = document.querySelectorAll('.mother-photo');
+    
+    photoElements.forEach(photo => {
+      photo.addEventListener('click', () => {
+        const parentItem = photo.closest('.mother-item');
+        if (parentItem) {
+          parentItem.classList.toggle('expanded');
+        }
+      });
+    });
+  });
+</script>

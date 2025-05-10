@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Erica",
+    "image": "Erica.jfif",
+    "messages": [
+      {
+        "text": "Madre, gracias por se mi Padre y mi Madre a la vez, por darme todo, por corregirme cuando me equivoco y por siempre estar a mi lado. Te amo con todo mi corazón.",
+        "author": "Alejandro Urrea"
+      },
+      {
+        "text": "Gracias por ser el corazón de nuestra familia, la que con amor infinito hace de cada día un hogar. Feliz Día de la Madre, mi amor.",
+        "author": "Felipe Ramírez"
+      }
+    ]
+  },
+  {
+    "name": "Martha",
+    "image": "Martha.jfif",
+    "messages": [
+      {
+        "text": "Ata, gracias por darme tu amor incondicional, por siempre estar a mi lado y darme tus conocimientos sin esperar nada a cambio. Te amo con todo mi corazón.",
+        "author": "Alejandro Urrea"
+      }
+    ]
+  },
+  {
+    "name": "Carolina",
+    "image": "Carolina.jfif",
+    "messages": [
+      {
+        "text": "Tía, gracias por apoyarme en todos mis sueños y creer en mí cuando nadie más lo hacía. Te amo con todo mi corazón.",
+        "author": "Alejandro Urrea"
+      }
+    ]
+  },
+  {
+    "name": "Aidee",
+    "image": "Aidee.jfif",
+    "messages": [
+      {
+        "text": " Mamá, gracias por enseñarme con tu ejemplo, corregirme con amor y hacerme reír incluso en los días difíciles. Eres fuerza, ternura y alegría en una sola persona. ¡Feliz Día de la Madre!",
+        "author": "Felipe Ramírez"
+      },
+      {
+        "text": "Abue, gracias por ser tan especial conmigo, por mostrarme el camino de Dios y por siempre estar ahí. Te amo con todo mi corazón.",
+        "author": "Alejandro Urrea"
+      }
+    ]
+  }
+]

@@ -1,54 +1,82 @@
 [
-  {
-    "name": "Erica",
-    "image": "Erica.jfif",
-    "messages": [
-      {
-        "text": "Madre, gracias por ser mi Padre y mi Madre a la vez, por darme todo, por corregirme cuando me equivoco y por siempre estar a mi lado. Te amo con todo mi corazón.",
-        "author": "Alejandro Urrea"
-      },
-      {
-        "text": "Gracias por ser el corazón de nuestra familia, la que con amor infinito hace de cada día un hogar. Feliz Día de la Madre, mi amor.",
-        "author": "Felipe Ramírez"
-      },
-      {
-        "text": "Feliz día a la mejor madre del mundo, estoy orgullosa de la gran mujer que eres, fuerte, poderosa, valiente y hermosa, eres mi ejemplo a seguir",
-        "author": "Isabella Urrea"
-      }
-    ]
-  },
-  {
-    "name": "Martha",
-    "image": "Martha.jfif",
-    "messages": [
-      {
-        "text": "Ata, gracias por darme tu amor incondicional, por siempre estar a mi lado y darme tus conocimientos sin esperar nada a cambio. Te amo con todo mi corazón.",
-        "author": "Alejandro Urrea"
-      }
-    ]
-  },
-  {
-    "name": "Carolina",
-    "image": "Carolina.jfif",
-    "messages": [
-      {
-        "text": "Tía, gracias por apoyarme en todos mis sueños y creer en mí cuando nadie más lo hacía. Te amo con todo mi corazón.",
-        "author": "Alejandro Urrea"
-      }
-    ]
-  },
-  {
-    "name": "Aidee",
-    "image": "Aidee.jfif",
-    "messages": [
-      {
-        "text": " Mamá, gracias por enseñarme con tu ejemplo, corregirme con amor y hacerme reír incluso en los días difíciles. Eres fuerza, ternura y alegría en una sola persona. ¡Feliz Día de la Madre!",
-        "author": "Felipe Ramírez"
-      },
-      {
-        "text": "Abue, gracias por ser tan especial conmigo, por mostrarme el camino de Dios y por siempre estar ahí. Te amo con todo mi corazón.",
-        "author": "Alejandro Urrea"
-      }
-    ]
-  }
+    {
+        "name": "Erica",
+        "image": "Erica.jfif",
+        "messages": [
+            {
+                "text": "Madre, gracias por ser mi Padre y mi Madre a la vez, por darme todo, por corregirme cuando me equivoco y por siempre estar a mi lado. Te amo con todo mi corazón.",
+                "author": "Alejandro Urrea"
+            },
+            {
+                "text": "Gracias por ser el corazón de nuestra familia, la que con amor infinito hace de cada día un hogar. Feliz Día de la Madre, mi amor.",
+                "author": "Felipe Ramírez"
+            },
+            {
+                "text": "Feliz día a la mejor madre del mundo, estoy orgullosa de la gran mujer que eres, fuerte, poderosa, valiente y hermosa, eres mi ejemplo a seguir",
+                "author": "Isabella Urrea"
+            },
+            {
+                "text": "Tia, eres como mi otra madre, gracias por nunca dejar de creer en mi y apoyarme en todo, te mereces lo mejor del mundo, te amo, ¡feliz dia de la madre!",
+                "author": "Camila Umbarila" 
+            }
+        ]
+    },
+    {
+        "name": "Martha",
+        "image": "Martha.jfif",
+        "messages": [
+            {
+                "text": "Ata, gracias por darme tu amor incondicional, por siempre estar a mi lado y darme tus conocimientos sin esperar nada a cambio. Te amo con todo mi corazón.",
+                "author": "Alejandro Urrea"
+            },
+            {
+                "text": "Ata,gracias por cuidar de nosotros y apoyarnos siempre con tanto amor como solo tu sabes hacerlo, Feliz dia de las madre!",
+                "author": "Camila Umbarila"
+            },
+            {
+                "text": "Querida madre no alcanzarían las palabras para describir todo lo maravillosa que eres, pero aprovecho está fecha especial para darte las gracias por tu inmenso amor ese apoyo incondicional que siempre nos das, Dios te bendiga siempre madre mía te amo.",
+                "author": "Erica Cadena"
+            },
+            {
+                "text": "Mamita te agradezco por todo lo que haces por mi no sé cómo pagarte tanto amor eres la mejor del mundo la más buena que Dios te bendiga siempre y me de la oportunidad de disfrutar muchas cosas juntas te amo infinitamente Atica hermosa.",
+                "author": "Carolina Cadena"
+            },
+            {
+                "text": "Ata, Feliz día de la madre, gracias por los valores que me has inculcado y por todas tus enseñanzas, sigue siendo así de bella. Te amo querida abuelita.",
+                "author": "Isabella Urrea"
+            }
+        ]
+    },
+    {
+        "name": "Carolina",
+        "image": "Carolina.jfif",
+        "messages": [
+            {
+                "text": "Tía, gracias por apoyarme en todos mis sueños y creer en mí cuando nadie más lo hacía. Te amo con todo mi corazón.",
+                "author": "Alejandro Urrea"
+            },
+            {
+                "text": "Mamita, te admiro y estoy muy orgullosa de la mujer tan fuerte que eres, gracias por darme tu amor y confianza incondicional, eres la mejor, Feliz dia de la madre , ¡te amo!",
+                "author": "Camila Umbarila"
+            }
+        ]
+    },
+    {
+        "name": "Aidee",
+        "image": "Aidee.jfif",
+        "messages": [
+            {
+                "text": " Mamá, gracias por enseñarme con tu ejemplo, corregirme con amor y hacerme reír incluso en los días difíciles. Eres fuerza, ternura y alegría en una sola persona. ¡Feliz Día de la Madre!",
+                "author": "Felipe Ramírez"
+            },
+            {
+                "text": "Abue, gracias por ser tan especial conmigo, por mostrarme el camino de Dios y por siempre estar ahí. Te amo con todo mi corazón.",
+                "author": "Alejandro Urrea"
+            },
+            {
+                "text": "Señora aidee, eres un gran ejemplo a seguir, te admiro por ser tan buena persona y tan fuerte;Feliz día de las madres a una de las mejores que conozco.",
+                "author": "Isabella Urrea"
+            }
+        ]
+    }
 ]
